@@ -22,3 +22,8 @@ Eğer bu projeye katkıda bulunmak isterseniz, lütfen bir pull request gönderi
 Eğer projeye ilişkin herhangi bir sorunuz veya öneriniz varsa, lütfen e-posta yoluyla iletişime geçin. E-posta adresi: yelkarasidogancan@gmail.com
 
 Umarım bu taslak, projeniz için yararlı olmuştur. Başka sorularınız varsa, yardımcı olmaktan mutluluk duyarım.
+
+## Ön İzleme
+
+https://user-images.githubusercontent.com/113992684/232307120-c8dc5be8-4b8c-43e8-9369-7a90d1e0f956.mp4
+
