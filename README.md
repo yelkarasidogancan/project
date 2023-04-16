@@ -4,8 +4,9 @@ Bu proje, React.js kullanarak geliştirilmiş bir drag and drop özelliği içer
 
 ### Kurulum
 
-1) `npm start` komutunu kullanarak projeyi çalıştırın.
-2) Tarayıcınızda `localhost:3000` adresine giderek uygulamayı görüntüleyebilirsiniz.
+1) Bu projeyi indirdikten sonra, terminale `npm install` yazarak gerekli paketleri yükleyin.
+2) `npm start` komutunu kullanarak projeyi çalıştırın.
+3) Tarayıcınızda `localhost:3000` adresine giderek uygulamayı görüntüleyebilirsiniz.
 
 ## Kullanım
 
