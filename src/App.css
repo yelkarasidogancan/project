@@ -1,38 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  min-width: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px 15px;
+  text-align: center;
+  background-color: #d2d2d22b;
+}
+.items {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item,
+.deleteButton {
+  min-width: 100px;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.deleteButton {
+  background-color: rgba(255, 0, 0, 0.149);
+}
+.item:hover {
+  background-color: rgba(128, 128, 128, 0.223);
+}
+.deleteButton:hover {
+  background-color: rgba(255, 0, 0, 0.312);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.rightSide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 191, 166, 0.038);
+}
+.h1 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #949494;
+}
+.inputSide {
+  width: 800px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-height: 700px;
+  overflow: auto;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hover {
+  background-color: rgba(0, 191, 166, 0.026);
+  border: 2px dashed black;
+}
+.input,
+.textarea,
+.button,
+.date {
+  background-color: rgb(250, 251, 252);
+  border-color: rgb(223, 225, 230);
+  color: rgb(9, 30, 66);
+  cursor: text;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out 0s,
+    border-color 0.2s ease-in-out 0s;
+  line-height: 1.42857;
+  padding: 8px 6px;
+  height: 36px;
+  width: 300px;
+}
+.textarea {
+  height: 75px;
+  max-height: 150px;
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #dedede;
+}
+
+.input:hover,
+.textarea:hover,
+.date:hover,
+.button:hover {
+  background-color: rgb(235, 236, 240);
+}
+.input:focus,
+.textarea:focus,
+.date:focus,
+.button:focus {
+  background-color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 1200px) {
+  .App {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    flex-direction: row;
+  }
+  .items {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .inputSide {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .inputSide {
+    width: 450px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .inputSide {
+    max-width: 80%;
   }
 }
